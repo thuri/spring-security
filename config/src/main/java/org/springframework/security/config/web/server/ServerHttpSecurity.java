@@ -2663,7 +2663,7 @@ public class ServerHttpSecurity {
 		/**
 		 * Configures cache control headers
 		 *
-		 * @see #cache()
+		 * @see HeaderSpec#cache(Customizer)
 		 */
 		public final class CacheSpec {
 
@@ -2684,7 +2684,7 @@ public class ServerHttpSecurity {
 		/**
 		 * The content type headers
 		 *
-		 * @see #contentTypeOptions()
+		 * @see HeaderSpec#contentTypeOptions(Customizer)
 		 */
 		public final class ContentTypeOptionsSpec {
 
@@ -2830,7 +2830,7 @@ public class ServerHttpSecurity {
 		 * Configures {@code Content-Security-Policy} response header.
 		 *
 		 * @since 5.1
-		 * @see #contentSecurityPolicy(String)
+		 * @see HeaderSpec#contentSecurityPolicy(Customizer)
 		 */
 		public final class ContentSecurityPolicySpec {
 
