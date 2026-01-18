@@ -2162,7 +2162,7 @@ public class ServerHttpSecurity {
 	 *
 	 * @author Evgeniy Cheban
 	 * @since 5.6
-	 * @see #passwordManagement()
+	 * @see #passwordManagement(Customizer)
 	 */
 	public final class PasswordManagementSpec {
 
@@ -2705,7 +2705,7 @@ public class ServerHttpSecurity {
 		/**
 		 * Configures frame options response header
 		 *
-		 * @see #frameOptions()
+		 * @see HeaderSpec#frameOptions(Customizer)
 		 */
 		public final class FrameOptionsSpec {
 
@@ -2737,7 +2737,7 @@ public class ServerHttpSecurity {
 		/**
 		 * Configures Strict Transport Security response header
 		 *
-		 * @see #hsts()
+		 * @see HeaderSpec#hsts(Customizer)
 		 */
 		public final class HstsSpec {
 
@@ -2796,7 +2796,7 @@ public class ServerHttpSecurity {
 		/**
 		 * Configures x-xss-protection response header
 		 *
-		 * @see #xssProtection()
+		 * @see HeaderSpec#xssProtection(Customizer)
 		 */
 		public final class XssProtectionSpec {
 
@@ -2898,7 +2898,7 @@ public class ServerHttpSecurity {
 		 * Configures {@code Permissions-Policy} response header.
 		 *
 		 * @since 5.5
-		 * @see #permissionsPolicy()
+		 * @see HeaderSpec#permissionsPolicy(Customizer)
 		 */
 		public final class PermissionsPolicySpec {
 
@@ -2921,8 +2921,7 @@ public class ServerHttpSecurity {
 		 * Configures {@code Referrer-Policy} response header.
 		 *
 		 * @since 5.1
-		 * @see #referrerPolicy()
-		 * @see #referrerPolicy(ReferrerPolicy)
+		 * @see HeaderSpec#referrerPolicy(Customizer)
 		 */
 		public final class ReferrerPolicySpec {
 
